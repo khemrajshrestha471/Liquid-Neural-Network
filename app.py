@@ -143,6 +143,8 @@ def generate_waveform(file_path):
 
 # Streamlit UI
 st.title("Audio Classification using Liquid Neural Network")
+st.subheader("This model predict the class of audio that are listed below:")
+st.write("air_conditioner, car_horn, children_playing, dog_bark, drilling, engine_idling, gun_shot, jackhammer, siren, street_music")
 
 uploaded_file = st.file_uploader("Upload an audio file", type=["wav", "mp3"])
 
